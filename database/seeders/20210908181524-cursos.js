@@ -7,11 +7,13 @@ module.exports = {
       [
         {
           curso: "2a",
+          estado: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
           curso: "2b",
+          estado: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
