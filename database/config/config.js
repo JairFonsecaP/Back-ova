@@ -16,10 +16,10 @@ module.exports = {
       "3d23ecea7a718b70263366cfa8894d02cdfc5d835707cd4e3944d5cc5fe73f3b",
     dialect: "postgres",
   },
-  dialectOptions: {
-    ssl: {
-      require: true,
-      rejectUnauthorized: false,
-    },
-  },
+  // dialectOptions: {
+  //   ssl: {
+  //     require: true,
+  //     rejectUnauthorized: false,
+  //   },
+  // },
 };
