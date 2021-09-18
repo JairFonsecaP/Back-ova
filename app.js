@@ -1,9 +1,6 @@
 const express = require("express");
 const app = express();
 const router = require("./routes/index");
-const morgan = require("morgan");
-
-app.use(morgan("dev"));
 
 const port = 3030;
 
