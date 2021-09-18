@@ -22,3 +22,12 @@ exports.registro = async (req, res) => {
     console.log(e);
   }
 };
+
+exports.list = async (req, res) => {
+  try {
+    const lista = await db.Contact.findAll({ order: [["id", "DESC"]] });
+    res.send(lista);
+  } catch (e) {
+    console.log(e);
+  }
+};
