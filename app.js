@@ -1,12 +1,9 @@
 const express = require("express");
 const app = express();
-const cors = require("cors");
 const router = require("./routes/index");
 const morgan = require("morgan");
 
 app.use(morgan("dev"));
-
-app.use(cors());
 
 const port = 3030;
 
@@ -19,7 +16,7 @@ app.set("port", process.env.PORT || port);
 
 if (process.env.NODE_ENV !== "test") {
   app.listen(app.get("port"), () => {
-    console.log("Server on port " + app.get("port") + " on dev");
+    console.log("Server on port " + app.get("port"));
   });
 }
 
