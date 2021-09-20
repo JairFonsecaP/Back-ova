@@ -9,3 +9,12 @@ exports.enviarVideo = (req, res) => {
     console.log(error);
   }
 };
+exports.enviarPDF = (req, res) => {
+  try {
+    res.sendFile(
+      path.resolve(__dirname, `../public/pdf/${req.params.archivo}`)
+    );
+  } catch (error) {
+    console.log(error);
+  }
+};
