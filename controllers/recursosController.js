@@ -18,3 +18,23 @@ exports.enviarPDF = (req, res) => {
     console.log(error);
   }
 };
+
+exports.enviarPic = (req, res) => {
+  try {
+    res.sendFile(
+      path.resolve(__dirname, `../public/pictures/${req.params.archivo}`)
+    );
+  } catch (e) {
+    console.log(e);
+  }
+};
+
+exports.enviarGif = (req, res) => {
+  try {
+    res.sendFile(
+      path.resolve(__dirname, `../public/gif/${req.params.archivo}`)
+    );
+  } catch (e) {
+    console.log(e);
+  }
+};
