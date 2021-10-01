@@ -74,12 +74,6 @@ exports.contact = async ({ nombre, email, telefono, comentario }) => {
     };
     const responseOne = await transporter.sendMail(mailOptionsTeacher);
     const responseTwo = await transporter.sendMail(mailOptionsContact);
-
-    if (responseOne.messageId && responseTwo.messageId) {
-      return true;
-    } else {
-      return false;
-    }
   } catch (e) {
     throw e;
   }
